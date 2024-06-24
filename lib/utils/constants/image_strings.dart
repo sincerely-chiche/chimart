@@ -20,4 +20,13 @@ class CImages {
       "assets/images/onboarding_images/mailbox.png";
   static const String registrationSuccessful =
       "assets/images/onboarding_images/verified.png";
+
+  // -- Categories Images
+  static const String sportIcon = "assets/icons/categories/bowling.png";
+  static const String shoesIcon = "assets/icons/categories/shoes.png";
+
+  // -- Banner Images
+  static const String promoBanner1 = "assets/images/banner/banner1.jpg";
+  static const String promoBanner2 = "assets/images/banner/banner2.jpg";
+  static const String promoBanner3 = "assets/images/banner/banner3.jpg";
 }
