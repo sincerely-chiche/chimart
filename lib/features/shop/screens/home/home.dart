@@ -1,5 +1,7 @@
 import 'package:chimart/common/widgets/global/custom_shapes/containers/primary_header_container.dart';
 import 'package:chimart/common/widgets/global/custom_shapes/containers/search_container.dart';
+import 'package:chimart/common/widgets/global/layouts/grid_layout.dart';
+import 'package:chimart/common/widgets/global/products/product_cards/product_card_vertical.dart';
 import 'package:chimart/common/widgets/global/text/section_heading.dart';
 import 'package:chimart/features/shop/screens/home/widgets/home_app_bar.dart';
 import 'package:chimart/features/shop/screens/home/widgets/home_categories.dart';
@@ -65,11 +67,22 @@ class HomeScreen extends StatelessWidget {
 
             Padding(
               padding: const EdgeInsets.all(CSizes.defaultSpace),
-              child: CPromoSlider(
-                banners: const [
-                  CImages.promoBanner1,
-                  CImages.promoBanner2,
-                  CImages.promoBanner3
+              child: Column(
+                children: [
+                  CPromoSlider(
+                    banners: const [
+                      CImages.promoBanner1,
+                      CImages.promoBanner2,
+                      CImages.promoBanner3
+                    ],
+                  ),
+                  const SizedBox(
+                    height: CSizes.spaceBtwSections,
+                  ),
+                  CGridLayout(
+                    itemCount: 8,
+                    itemBuilder: (_, index) => const CProductCardVertical(),
+                  ),
                 ],
               ),
             )

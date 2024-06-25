@@ -29,4 +29,7 @@ class CImages {
   static const String promoBanner1 = "assets/images/banner/banner1.jpg";
   static const String promoBanner2 = "assets/images/banner/banner2.jpg";
   static const String promoBanner3 = "assets/images/banner/banner3.jpg";
+
+  // -- Product Images
+  static const String product = "https://picsum.photos/200/300?random=1";
 }
